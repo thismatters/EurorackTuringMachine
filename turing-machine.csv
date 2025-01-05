@@ -4,7 +4,7 @@
 "3","C4, C5, C6, C13, C14, C15, C19, C20, C21, C22, C23, C24, C25","13","100n","Capacitor_SMD:C_0805_2012Metric","","",""
 "4","C7","1","10n","Capacitor_SMD:C_0805_2012Metric","","",""
 "5","C8, C11, C16, C17, C18","5","1n","Capacitor_SMD:C_0805_2012Metric","","",""
-"6","C9, C10, C12","3","470n box","Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2","","",""
+"6","C9, C10, C12","3","470n box","Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2","","",""
 "7","D1, D2","2","BAT54S","Package_TO_SOT_SMD:SOT-23","","Mouser","863-BAT54SLT1G"
 "8","D3","1","1N4148","Diode_SMD:D_SOD-323_HandSoldering","","",""
 "9","D4, D5, D6, D7, D8, D9, D10, D11, D12, D13","10","LED_GREEN","LED_THT:LED_D3.0mm","","",""
