@@ -52,3 +52,11 @@ There are part numbers in the [BOM](turing-machine.csv) for many of the parts (n
 
 
 ## Changelog
+
+### V1
+
+* [x] Fixed pinout for DAC0800 which is different for SOIC than PDIP
+* [x] Write switch rotated 180deg
+* [x] Filters between shift registers removed (max clock rate confirmed at around 1330Hz (E6))
+* [x] Schmitt trigger supplements op-amp in gate input stage
+* [x] Flipped trimmer and added hole to front panel so that trimming can happen _in-situ_, added note to PCB about how the trimmer should be oriented.
