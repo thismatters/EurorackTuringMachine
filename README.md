@@ -7,6 +7,7 @@ The circuit here is based on the [Music Thing Modular Turing Machine](https://gi
 * Full surface mount design on a single PCB,
 * Simpler input power filtering,
 * Expanded length choices to include 7, 9, 11, and 13 (in addition to the default 2, 3, 4, 5, 6, 8, 12, and 16).
+* Schmitt trigger with hysteresis on clock input to handle input signals which aren't perfectly smooth (alleviating the tendancy of the Music Thing Modular circuit to double-clock)
 
 This module should be a drop-in replacement for the Musing Thing Modular version with the same width and same basic panel layout. I've altered it somewhat to fit with the aesthetic and practices of my DIY build, however the pinouts for expansion modules adhere exactly to the original. This repo inherits the same license as the original Turing Machine: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)
 
@@ -19,7 +20,7 @@ The KiCAD project here uses the library/footprints [found in my companion repo](
 ## Inputs
 
 Jacks:
-- Clock (required input)
+- Clock (required input) -- Max clock rate: 1300Hz; higher frequencies will cause bit smearing.
 - CV for setting "Change" rate
 
 Knobs:
@@ -48,7 +49,7 @@ There are part numbers in the [BOM](turing-machine.csv) for many of the parts (n
 * [Mouser](https://www.mouser.com): Needs no introduction. Get your ICs from here (or [digikey](https://www.digikey.com)).
 * [Tayda Electronics](https://www.taydaelectronics.com/): Good supplier for passive components; audio jacks, and potentiometers. Their audio jacks are slightly smaller than the thonkiconn from thonk.
 * [Love My Switches](https://lovemyswitches.com/): Has [really good knobs](https://lovemyswitches.com/anodized-aluminum-knob-the-lo-fi-1-4-smooth-shaft-12-5mm-od/) to go on those potentiometers!
-* [OSHPark](https://oshpark.com/): Fast and (relatively) cheap PCB manufacturer. Prototype run pending.
+* [OSHPark](https://oshpark.com/): Fast and (relatively) cheap PCB manufacturer. [V1 board works great!](https://oshpark.com/shared_projects/wF94N3Eb)
 
 
 ## Changelog
