@@ -61,3 +61,18 @@ There are part numbers in the [BOM](turing-machine.csv) for many of the parts (n
 * [x] Filters between shift registers removed (max clock rate confirmed at around 1330Hz (E6))
 * [x] Schmitt trigger supplements op-amp in gate input stage
 * [x] Flipped trimmer and added hole to front panel so that trimming can happen _in-situ_, added note to PCB about how the trimmer should be oriented.
+
+### V2
+
+* [x] Corrected C12 to have value of 1nF
+* [x] Added test points for:
+  * LOOP_CTRL'
+  * RAND'
+* [x] Investigated noise interference
+  * When several LEDs are lit the noise level drops dramatically
+  * clipping the LEDS from the prototype PCB alleviated the problem.
+  * It seems produent to run the LEDS from the buffer outputs (which drive the expanders), and to drive the buffers from an isolated power circuit.
+* [x] tested the V1 circuit driving LEDs from expander to see if secondary power circuit is necessary
+  * it is. Driving the LEDs via the buffer still brings the +12V rail from 11.45V to 11.15V
+* Tested if ferrite bead in place of 10ohm resistor for power conditioning corrects noise interference issue (parts on order)
+* Updated power circuit to use ferrite bead (81-BLM21SP700BH1D) instead of resistor to more closely match original design (on order for testing)
