@@ -13,6 +13,8 @@ This module should be a drop-in replacement for the Musing Thing Modular version
 
 The KiCAD project here uses the library/footprints [found in my companion repo](https://github.com/thismatters/EurorackKiCAD).
 
+Note resistors R1 and R2 have been removed. You will not find them in the schematic or BOM.
+
 ## Width
 
 10hp
@@ -62,7 +64,7 @@ There are part numbers in the [BOM](turing-machine.csv) for many of the parts (n
 * [x] Schmitt trigger supplements op-amp in gate input stage
 * [x] Flipped trimmer and added hole to front panel so that trimming can happen _in-situ_, added note to PCB about how the trimmer should be oriented.
 
-### V2
+### V1a
 
 * [x] Corrected C12 to have value of 1nF
 * [x] Added test points for:
@@ -74,5 +76,9 @@ There are part numbers in the [BOM](turing-machine.csv) for many of the parts (n
   * It seems produent to run the LEDS from the buffer outputs (which drive the expanders), and to drive the buffers from an isolated power circuit.
 * [x] tested the V1 circuit driving LEDs from expander to see if secondary power circuit is necessary
   * it is. Driving the LEDs via the buffer still brings the +12V rail from 11.45V to 11.15V
-* Tested if ferrite bead in place of 10ohm resistor for power conditioning corrects noise interference issue (parts on order)
-* Updated power circuit to use ferrite bead (81-BLM21SP700BH1D) instead of resistor to more closely match original design (on order for testing)
+* [x] Tested if ferrite bead in place of 10ohm resistor for power conditioning corrects noise interference issue (seems to work fine)
+* [x] Updated power circuit to use ferrite bead (81-BLM21SP700BH1D) instead of resistor to more closely match original design
+
+#### V1 -> V1a refit
+* Change capacitor C12 value to 1nF.
+* Use ferrite bead in place of resistors R1 and R2. A suitable part with an matching footprint is available from Mouser.com: part number 81-BLM21SP700BH1D.
